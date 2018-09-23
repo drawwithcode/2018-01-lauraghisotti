@@ -66,7 +66,7 @@ function draw() {
 
   fill(167, 219, 214);
 	//rect(230, 106, 6, 40, 15);
-	if(mouseY < 146){
+	if(mouseY < 106){
     quad(230, mouseY, 236, mouseY, 236, 146, 230, 146);
   } else {
     quad(230, 106, 236, 106, 236, 146, 230, 146);
@@ -75,8 +75,8 @@ function draw() {
 
 	fill(167, 219, 214);
 	//rect(242, 114, 6, 25, 15);
-	if(mouseY < 139){
-    quad(242, mouseY, 248, mouseY, 248, 139, 242, 139);
+	if(mouseY < 114){
+    quad(242, mouseY+8, 248, mouseY+8, 248, 139, 242, 139);
   } else {
     quad(242, 114, 248, 114, 248, 139, 242, 139);
   }
