@@ -65,10 +65,22 @@ function draw() {
 	arc(258, 204, 17, 17, TWO_PI, PI);
 
   fill(167, 219, 214);
-	rect(230, 106, 6, 40);
+	//rect(230, 106, 6, 40, 15);
+	if(mouseY < 146){
+    quad(230, mouseY, 236, mouseY, 236, 146, 230, 146);
+  } else {
+    quad(230, 106, 236, 106, 236, 146, 230, 146);
+  }
+	//quad(230, 146-mouseY, 236, 146-mouseY, 236, 146, 230, 146);
 
 	fill(167, 219, 214);
-	rect(242, 114, 6, 25);
+	//rect(242, 114, 6, 25, 15);
+	if(mouseY < 139){
+    quad(242, mouseY, 248, mouseY, 248, 139, 242, 139);
+  } else {
+    quad(242, 114, 248, 114, 248, 139, 242, 139);
+  }
+	//quad(242, 139-mouseY, 248, 139-mouseY, 248, 139, 242, 139);
 
 	fill(0);
   triangle(257, 154, 242, 180, 272, 180);
@@ -79,10 +91,10 @@ function draw() {
 	//Umbrella
 	strokeWeight(4);
 	stroke(0, 0, 0);
-	line(220, 160, 190, 120);
+	line(220, 160, 147, 57);
 
 	noStroke();
-	fill(255);
+	fill(255, 99);
   arc(190, 120, 150, 150, TWO_PI/2.5, PI+TWO_PI/2.5);
 
 	fill(36, 155, 143);
